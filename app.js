@@ -15,7 +15,30 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 productsRouter.route('/').get((req, res) => {
-  res.render('products');
+  res.render('products', {
+    products: [
+      {
+        productsTitle: 'งง',
+        productsDescription: 'น้ำยาตรางง 1',
+        productsPrice: 4100,
+      },
+      {
+        productsTitle: 'งง',
+        productsDescription: 'น้ำยาตรางง 2',
+        productsPrice: 4200,
+      },
+      {
+        productsTitle: 'งง',
+        productsDescription: 'น้ำยาตรางง 3',
+        productsPrice: 4300,
+      },
+      {
+        productsTitle: 'งง',
+        productsDescription: 'น้ำยาตรางง 4',
+        productsPrice: 4400,
+      },
+    ],
+  });
 });
 
 productsRouter.route('/1').get((req, res) => {
