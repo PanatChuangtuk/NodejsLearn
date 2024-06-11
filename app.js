@@ -15,11 +15,11 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 productsRouter.route('/').get((req, res) => {
-  res.render('Hello Products 1');
+  res.send('Hello Products 1');
 });
 
 productsRouter.route('/1').get((req, res) => {
-  res.render('Hello Products 2');
+  res.send('Hello Products 2');
 });
 
 app.use('/products', productsRouter);
