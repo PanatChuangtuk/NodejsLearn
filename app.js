@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, '/public/')));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
-productRouter.route('/').get((req, res) => {
+productsRouter.route('/').get((req, res) => {
   res.render('products');
 });
 
