@@ -5,15 +5,21 @@ const chalk = require('chalk');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 4000;
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, '/public/')));
 
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-  res.send('Hello Con');
+  res.render('index', {
+    username: 'Panat',
+    customer: ['puai', 'na', 'na cute'],
+  });
 });
 
-app.listen(port, () => {
-  console.log('Confuse on port : ' + chalk.red(port));
+app.listen(PORT, () => {
+  console.log('Confuse on PORT : ' + chalk.red(PORT));
 });
