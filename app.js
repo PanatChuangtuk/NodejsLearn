@@ -3,7 +3,7 @@ const debug = require('debug')('app');
 const morgan = require('morgan');
 const chalk = require('chalk');
 const path = require('path');
-const productRouter = express.Router();
+const productsRouter = express.Router();
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -15,14 +15,14 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 productRouter.route('/').get((req, res) => {
-  res.render('product');
+  res.render('products');
 });
 
-productRouter.route('/1').get((req, res) => {
+productsRouter.route('/1').get((req, res) => {
   res.send('Hello Products 2');
 });
 
-app.use('/product', productRouter);
+app.use('/products', productsRouter);
 
 app.get('/', (req, res) => {
   res.render('index', {
