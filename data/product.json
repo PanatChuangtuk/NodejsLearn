@@ -1,34 +1,32 @@
-{
-  "products": [
-    {
-      "id": 0,
-      "productsTitle": "งง",
-      "productsDescription": "น้ำยาตรางง 1",
-      "productsPrice": 4100
-    },
-    {
-      "id": 1,
-      "productsTitle": "งง",
-      "productsDescription": "น้ำยาตรางง 2",
-      "productsPrice": 4200
-    },
-    {
-      "id": 2,
-      "productsTitle": "งง",
-      "productsDescription": "น้ำยาตรางง 3",
-      "productsPrice": 4300
-    },
-    {
-      "id": 3,
-      "productsTitle": "งง",
-      "productsDescription": "น้ำยาตรางง 4",
-      "productsPrice": 4400
-    },
-    {
-      "id": 4,
-      "productsTitle": "งง,มาก",
-      "productsDescription": "น้ำยาตรางง 5",
-      "productsPrice": 4500
-    }
-  ]
-}
+[
+  {
+    "id": 0,
+    "productsTitle": "งง",
+    "productsDescription": "น้ำยาตรางง 1",
+    "productsPrice": 4100
+  },
+  {
+    "id": 1,
+    "productsTitle": "งง",
+    "productsDescription": "น้ำยาตรางง 2",
+    "productsPrice": 4200
+  },
+  {
+    "id": 2,
+    "productsTitle": "งง",
+    "productsDescription": "น้ำยาตรางง 3",
+    "productsPrice": 4300
+  },
+  {
+    "id": 3,
+    "productsTitle": "งง",
+    "productsDescription": "น้ำยาตรางง 4",
+    "productsPrice": 4400
+  },
+  {
+    "id": 4,
+    "productsTitle": "งง,มาก",
+    "productsDescription": "น้ำยาตรางง 5",
+    "productsPrice": 4500
+  }
+]
