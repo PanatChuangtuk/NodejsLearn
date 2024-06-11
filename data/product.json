@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "productsTitle": "งง",
+      "productsDescription": "น้ำยาตรางง 1",
+      "productsPrice": 4100
+    },
+    {
+      "productsTitle": "งง",
+      "productsDescription": "น้ำยาตรางง 2",
+      "productsPrice": 4200
+    },
+    {
+      "productsTitle": "งง",
+      "productsDescription": "น้ำยาตรางง 3",
+      "productsPrice": 4300
+    },
+    {
+      "productsTitle": "งง",
+      "productsDescription": "น้ำยาตรางง 4",
+      "productsPrice": 4400
+    }
+  ]
+}
