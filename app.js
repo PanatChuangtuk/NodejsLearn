@@ -1,28 +1,17 @@
-const express = require('express');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const chalk = require('chalk');
 const path = require('path');
-const products = require('./data/product.json');
-const productsRouter = express.Router();
-
+const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 4000;
+const productsRouter = require('./src/views/router/productsRouter');
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, '/public/')));
 
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
-
-productsRouter.route('/').get((req, res) => {
-  res.render('products', { products });
-});
-
-productsRouter.route('/:id').get((req, res) => {
-  const id = req.params.id;
-  res.render('product', { product: products[id] });
-});
 
 app.use('/products', productsRouter);
 
